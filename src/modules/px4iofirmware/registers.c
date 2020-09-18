@@ -235,7 +235,7 @@ uint16_t		r_page_rc_input_config[PX4IO_RC_INPUT_CHANNELS * PX4IO_P_RC_CONFIG_STR
  *
  * Disable pulses as default.
  */
-uint16_t		r_page_servo_failsafe[PX4IO_SERVO_COUNT] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint16_t		r_page_servo_failsafe[PX4IO_SERVO_COUNT] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 /**
  * PAGE 106
@@ -243,7 +243,7 @@ uint16_t		r_page_servo_failsafe[PX4IO_SERVO_COUNT] = { 0, 0, 0, 0, 0, 0, 0, 0 };
  * minimum PWM values when armed
  *
  */
-uint16_t		r_page_servo_control_min[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN };
+uint16_t		r_page_servo_control_min[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN, PWM_DEFAULT_MIN };
 
 /**
  * PAGE 107
@@ -251,7 +251,7 @@ uint16_t		r_page_servo_control_min[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MIN, PWM_D
  * maximum PWM values when armed
  *
  */
-uint16_t		r_page_servo_control_max[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX };
+uint16_t		r_page_servo_control_max[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX, PWM_DEFAULT_MAX };
 
 /**
  * PAGE 108
@@ -259,7 +259,7 @@ uint16_t		r_page_servo_control_max[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_MAX, PWM_D
  * trim values for center position
  *
  */
-int16_t		r_page_servo_control_trim[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM };
+int16_t		r_page_servo_control_trim[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM, PWM_DEFAULT_TRIM };
 
 /**
  * PAGE 109
@@ -267,7 +267,7 @@ int16_t		r_page_servo_control_trim[PX4IO_SERVO_COUNT] = { PWM_DEFAULT_TRIM, PWM_
  * disarmed PWM values for difficult ESCs
  *
  */
-uint16_t		r_page_servo_disarmed[PX4IO_SERVO_COUNT] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint16_t		r_page_servo_disarmed[PX4IO_SERVO_COUNT] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 int
 registers_set(uint8_t page, uint8_t offset, const uint16_t *values, unsigned num_values)

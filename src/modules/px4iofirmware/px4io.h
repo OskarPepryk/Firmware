@@ -62,7 +62,8 @@
  * Constants and limits.
  */
 #define PX4IO_BL_VERSION			3
-#define PX4IO_SERVO_COUNT			8
+#define PX4IO_SERVO_COUNT_WO_SBUS	        8
+#define PX4IO_SERVO_COUNT			16
 #define PX4IO_CONTROL_CHANNELS		8
 #define PX4IO_CONTROL_GROUPS		4
 #define PX4IO_RC_INPUT_CHANNELS		18
