@@ -347,6 +347,14 @@ then
 	pwm disarmed -c 6 -p p:PWM_MAIN_DIS6
 	pwm disarmed -c 7 -p p:PWM_MAIN_DIS7
 	pwm disarmed -c 8 -p p:PWM_MAIN_DIS8
+	pwm disarmed -c 9 -p p:PWM_MAIN_DIS9
+	pwm disarmed -c A -p p:PWM_MAIN_DIS10
+	pwm disarmed -c B -p p:PWM_MAIN_DIS11
+	pwm disarmed -c C -p p:PWM_MAIN_DIS12
+	pwm disarmed -c D -p p:PWM_MAIN_DIS13
+	pwm disarmed -c E -p p:PWM_MAIN_DIS14
+	pwm disarmed -c F -p p:PWM_MAIN_DIS15
+	pwm disarmed -c G -p p:PWM_MAIN_DIS16
 
 	#
 	# Per channel min settings.
@@ -359,6 +367,14 @@ then
 	pwm min -c 6 -p p:PWM_MAIN_MIN6
 	pwm min -c 7 -p p:PWM_MAIN_MIN7
 	pwm min -c 8 -p p:PWM_MAIN_MIN8
+	pwm min -c 9 -p p:PWM_MAIN_MIN9
+	pwm min -c A -p p:PWM_MAIN_MIN10
+	pwm min -c B -p p:PWM_MAIN_MIN11
+	pwm min -c C -p p:PWM_MAIN_MIN12
+	pwm min -c D -p p:PWM_MAIN_MIN13
+	pwm min -c E -p p:PWM_MAIN_MIN14
+	pwm min -c F -p p:PWM_MAIN_MIN15
+	pwm min -c G -p p:PWM_MAIN_MIN16
 
 	#
 	# Per channel max settings.
@@ -371,6 +387,14 @@ then
 	pwm max -c 6 -p p:PWM_MAIN_MAX6
 	pwm max -c 7 -p p:PWM_MAIN_MAX7
 	pwm max -c 8 -p p:PWM_MAIN_MAX8
+	pwm max -c 9 -p p:PWM_MAIN_MAX9
+	pwm max -c A -p p:PWM_MAIN_MAX10
+	pwm max -c B -p p:PWM_MAIN_MAX11
+	pwm max -c C -p p:PWM_MAIN_MAX12
+	pwm max -c D -p p:PWM_MAIN_MAX13
+	pwm max -c E -p p:PWM_MAIN_MAX14
+	pwm max -c F -p p:PWM_MAIN_MAX15
+	pwm max -c G -p p:PWM_MAIN_MAX16
 
 	if [ $FAILSAFE != none ]
 	then
@@ -388,6 +412,14 @@ then
 	pwm failsafe -c 6 -p p:PWM_MAIN_FAIL6
 	pwm failsafe -c 7 -p p:PWM_MAIN_FAIL7
 	pwm failsafe -c 8 -p p:PWM_MAIN_FAIL8
+	pwm failsafe -c 9 -p p:PWM_MAIN_FAIL9
+	pwm failsafe -c A -p p:PWM_MAIN_FAIL10
+	pwm failsafe -c B -p p:PWM_MAIN_FAIL11
+	pwm failsafe -c C -p p:PWM_MAIN_FAIL12
+	pwm failsafe -c D -p p:PWM_MAIN_FAIL13
+	pwm failsafe -c E -p p:PWM_MAIN_FAIL14
+	pwm failsafe -c F -p p:PWM_MAIN_FAIL15
+	pwm failsafe -c G -p p:PWM_MAIN_FAIL16
 fi
 
 unset MIXER_AUX_FILE

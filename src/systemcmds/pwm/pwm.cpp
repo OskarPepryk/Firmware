@@ -143,7 +143,7 @@ $ pwm test -c 13 -p 1200
 
 	PRINT_MODULE_USAGE_PARAM_COMMENT("The commands 'rate', 'oneshot', 'failsafe', 'disarmed', 'min', 'max', 'test' and 'steps' "
 					 "additionally require to specify the channels with one of the following commands:");
-	PRINT_MODULE_USAGE_PARAM_STRING('c', nullptr, nullptr, "select channels in the form: 1234 (1 digit per channel, 1=first)",
+	PRINT_MODULE_USAGE_PARAM_STRING('c', nullptr, nullptr, "select channels in the form: 1234..DEFG (1 digit per channel, 1=first, G=16th channel)",
 					true);
 	PRINT_MODULE_USAGE_PARAM_INT('m', -1, 0, 4096, "Select channels via bitmask (eg. 0xF, 3)", true);
 	PRINT_MODULE_USAGE_PARAM_INT('g', -1, 0, 10, "Select channels by group (eg. 0, 1, 2. use 'pwm info' to show groups)",
@@ -208,12 +208,12 @@ pwm_main(int argc, char *argv[])
 
 		case 'c':
 			/* Read in channels supplied as one int and convert to mask: 1234 -> 0xF */
-			channels = strtoul(myoptarg, &ep, 0);
+			channels = strtoul(myoptarg, &ep, 17);
 
-			while ((single_ch = channels % 10)) {
+			while ((single_ch = channels % 17)) {
 
 				set_mask |= 1 << (single_ch - 1);
-				channels /= 10;
+				channels /= 17;
 			}
 
 			break;
